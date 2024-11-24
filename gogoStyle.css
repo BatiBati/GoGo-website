@@ -264,6 +264,7 @@
 }
 
 .bottomsection {
+    position: relative;
     width: 24%;
     gap: 20px;
 }
@@ -933,7 +934,6 @@
     max-width: 1100px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .interview {
@@ -964,6 +964,8 @@
     overflow: hidden;
     border-radius: 10px;
     position: relative;
+    transition: all;
+    transition-duration: 0.4s;
 }
 
 .interview-people-left img {
@@ -993,14 +995,20 @@
     margin: auto;
 }
 
-.gutal-text {}
+.interview-people-left:hover .gutal-section-1 {
+    opacity: 0.7;
+    transition: all;
+    transition-duration: 0.4s;
+}
 
 .gutal-section-1 {
-    background-color: #d6710b;
+    background-color: #407ce8;
     color: white;
     font-size: 10px;
     padding: 5px 8px;
     width: fit-content;
+    border-radius: 5px;
+    font-weight: 700;
 }
 
 .gutal-section-2 {
@@ -1021,7 +1029,7 @@
     font-size: 10px;
     color: white;
     gap: 5px;
-    font-weight: 600;
+    font-weight: 700;
 
 }
 
@@ -1049,7 +1057,7 @@
     border-radius: 10px;
     width: 50%;
     height: 100%;
-
+    position: relative;
 }
 
 .interview-people-right-img img {
@@ -1071,4 +1079,350 @@
     transform: scale(1.1, 1.1);
     transition: all;
     transition-duration: 0.4s;
+}
+
+.interview-people-right-img:hover .interview-people-right-top-1-category-top {
+    opacity: 0.7;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.interview-people-right-top-1-category-a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+
+.interview-people-right-top-1-category-top {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    background-color: #407ce8;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.interview-people-right-top-1-category-top-p {
+    font-size: 13px;
+    color: white;
+    width: fit-content;
+    height: 45px;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.interview-people-right-img:hover .interview-people-right-top-1-category-top-p {
+    height: 60px;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.gogohevmayag {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.gogohevmayag-blue {
+    background-color: #00b0f4;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.hev-mayag-container {
+    display: flex;
+    gap: 10px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+    height: fit-content;
+
+}
+
+.hev-section-1 {
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 360px;
+
+}
+
+.hev-section-1-img {
+    height: 230px;
+    width: 100%;
+}
+
+.hev-section-1-img img {
+    width: 100%;
+    height: 100%
+}
+
+.hev-section-text {
+    width: fit-content;
+    height: 80px;
+    padding: 10px;
+    line-height: 20px;
+    overflow: hidden;
+
+}
+
+.hev-comment {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hev-comment-1 {
+    display: flex;
+    align-items: center;
+    color: #888888;
+}
+
+.hev-comment svg {
+    width: 20px;
+    height: 20px;
+}
+
+.hev-line {
+    width: 90%;
+    margin: auto;
+    border-radius: 1px;
+    margin: 5px;
+    height: 1px;
+    background-color: #cacaca;
+
+}
+
+.gogo-tech {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.gogo-tech img {
+    height: 30px;
+    width: 30px;
+}
+
+.turtle {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.turtle img {
+    height: 30px;
+    width: 30px;
+}
+
+.comic {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.comic-section {
+    width: 50%;
+    height: 330px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.comic-img {
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.comic-img img {
+    width: 100%;
+    height: 200px;
+}
+
+.comic-img p {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    top: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+
+}
+
+.comic-section-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #cacaca;
+    margin-top: 0px;
+}
+
+.comic-section-text-1 {
+    font-size: 16px;
+    height: 100px;
+}
+
+.comic-section-comment {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: fit-content;
+}
+
+.comic-section-comment-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.comic-section-comment-1 img {
+    gap: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.comic-line {
+    width: 90%;
+    margin: auto;
+    height: 1px;
+    margin-bottom: 5px;
+    background-color: #cacaca;
+    display: flex;
+    justify-content: center;
+}
+
+.comic-section:hover .comic-img {
+    filter: brightness(75%);
+}
+
+.comic-section:hover .comic-img {
+    transform: scale(1.1, 1.1);
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+.uzeh-container {
+    background-color: #262626;
+    margin-top: 60px;
+    padding-bottom: 70px;
+}
+
+.uzeh-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.uzeh-section p {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.uzeh-1 {
+    position: absolute;
+    top: 0px;
+}
+
+.uzeh-section {
+    padding-top: 40px;
+    display: flex;
+    max-width: 1100px;
+
+}
+
+.uzeh-textt p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.last-container {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gogo-bot-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gogo-bot-logo img {
+    width: 119px;
+    height: 38.91px;
+}
+
+.bot-category {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+
+}
+
+.bot-category img {
+    width: 20px;
+    height: 20px;
+}
+
+.bot-line {
+    width: 100%;
+    height: 1px;
+    border-style: solid;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    opacity: 0.2;
+}
+
+.botbot {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logos {
+    display: flex;
+    gap: 5px;
 }

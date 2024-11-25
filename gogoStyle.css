@@ -31,6 +31,11 @@
     gap: 20px;
 }
 
+.headerleftbox img {
+    width: 119px;
+    height: 38.91px
+}
+
 .headerleftboxtext {
     display: flex;
     margin-left: 20px;
@@ -88,9 +93,16 @@
 
 .headerrightboxitem {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-weight: 550;
     margin: 5px 5px;
     font-size: 18px;
+    width: 100%;
+
+}
+
+.menu-bar {
+    display: none;
 }
 
 .headerrightboxitem img {
@@ -119,6 +131,11 @@
     margin: auto;
     background-color: #fff;
 }
+
+.mainsecimg {
+    display: none;
+}
+
 
 .mainsection1 {
     background-image: linear-gradient(to right,
@@ -1425,4 +1442,113 @@
 .logos {
     display: flex;
     gap: 5px;
+}
+
+.display {
+    display: block;
+}
+
+/* ---------------------For Mobile------------------------------- */
+
+@media only screen and (max-width: 959px) {
+    .display {
+        display: none;
+    }
+
+    .headerleftbox {
+        width: fit-content;
+    }
+
+    .headerleftbox-img img {
+        width: 70px;
+        height: 22px;
+    }
+
+    .headerrightbox {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-left: 84.305;
+        width: 30%;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    .headerinside {
+        margin-top: 0px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+
+    .headerrightbox {
+        margin-left: 10px;
+        gap: 5px;
+        justify-content: flex-start;
+    }
+
+    .headerrightbox-box {
+        border: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        border-radius: 10px;
+        width: fit-content;
+        height: 100%;
+        padding: 5px;
+    }
+
+    .headerrightboxitem {
+        margin: auto;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .headerinside {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .gogomain {
+        margin-top: 0px;
+        height: 650px;
+    }
+
+    #gogocontainer-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-bar {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        border-left: 1px;
+        border-style: solid;
+        border-color: #e0e0e0;
+        opacity: 0.8;
+    }
+
+    .mainsection1 {
+        width: 100%;
+        position: relative;
+        padding: 0px;
+    }
+
+    .mainsecimg {
+        display: block;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
+    .mainsecimg img {
+        width: 100%;
+
+    }
+    .gogomaincontainer {
+        height: 650px;
+    }
+
+
 }

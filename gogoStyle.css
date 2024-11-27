@@ -163,6 +163,12 @@
     margin-bottom: 5px;
 }
 
+.main-section-share {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px
+}
+
 .mainsection1 h2 {
     font-size: 26px;
     margin-top: 10px;
@@ -278,13 +284,16 @@
     margin: auto;
     margin-top: 40px;
     padding-bottom: 40px;
+
 }
 
 .bottomsection {
     position: relative;
-    width: 24%;
+    width: 100%;
     gap: 20px;
 }
+
+.for-media-unflex {}
 
 .bottom-section-position {
     border-radius: 10px;
@@ -313,7 +322,7 @@
 
 .bottomsection img {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     border-radius: 10px;
     transition: all ease-out;
     transition-duration: 0.3s;
@@ -336,9 +345,38 @@
     color: white;
 }
 
+.ontsloh-container {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.ontsloh-container-1 {
+    width: 33.3%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    gap: 5px;
+}
+
+.ontsloh-container-1 img {
+    width: 15px;
+    height: 15px;
+}
+
 .main-content-bottom-flex {
     display: flex;
-    margin-top: 5px;
+    gap: 5px;
+    margin-top: 5px
 }
 
 .gogoStory {
@@ -377,11 +415,16 @@
     transition-duration: 0.3s;
     position: absolute;
     top: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .story-section-1:hover img {
     transform: scale(1.1, 1.1);
+}
+
+.story-section-container {
+    display: flex;
+    justify-content: space-between
 }
 
 .section-gogo-logo {
@@ -413,7 +456,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-image: linear-gradient(rgba(156, 156, 156, 0),
             rgba(48, 48, 48, 0.798));
 }
@@ -506,6 +549,12 @@
     width: 100%;
 }
 
+.left-column-days-first {
+    font-size: 13px;
+    width: fit-content;
+    cursor: pointer
+}
+
 .days {
     display: flex;
     justify-content: center;
@@ -572,7 +621,7 @@
 
 .left-column-news-flex {
     margin-top: 30px;
-    height: 175px;
+    height: fit-content;
 }
 
 .left-column-news-img {
@@ -765,7 +814,7 @@
 
 .right-column-line {
     width: 1px;
-    height: 3800px;
+    height: fit-content;
     background-color: #dfdfdfcc;
 
 }
@@ -1181,23 +1230,38 @@
     width: 24%;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 360px;
+    height: 270px;
 
 }
 
+.hev-section-1-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hev-section-1-bot {
+    height: 30%;
+}
+
 .hev-section-1-img {
-    height: 230px;
+    height: 100%;
     width: 100%;
+    height: 70%;
+    border-radius: 10px;
+
 }
 
 .hev-section-1-img img {
     width: 100%;
-    height: 100%
+    height: 100%;
+    border-radius: 10px;
 }
 
 .hev-section-text {
     width: fit-content;
-    height: 80px;
+    height: 50px;
     padding: 10px;
     line-height: 20px;
     overflow: hidden;
@@ -1208,13 +1272,22 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    color: #888888;
 }
 
 .hev-comment-1 {
     display: flex;
     align-items: center;
     color: #888888;
+    gap: 7px;
+    padding-left: 15px;
 }
+
+.hev-comment-2 {
+    display: flex;
+    align-items: center;
+}
+
 
 .hev-comment svg {
     width: 20px;
@@ -1254,7 +1327,7 @@
     gap: 20px;
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .turtle img {
@@ -1269,20 +1342,22 @@
 }
 
 .comic-section {
-    width: 50%;
     height: 330px;
+    width: 50%;
     margin-left: 10px;
     overflow: hidden;
 }
 
 .comic-img {
+    height: 50%;
     transition: all;
     transition-duration: 0.4s;
 }
 
 .comic-img img {
     width: 100%;
-    height: 200px;
+    height: 100%;
+    padding: 10px;
 }
 
 .comic-img p {
@@ -1297,16 +1372,18 @@
 
 .comic-section-text {
     width: 100%;
+    height: 35%;
     padding: 10px;
     border: 1px;
     border-style: solid;
     border-color: #cacaca;
     margin-top: 0px;
+    position: relative;
 }
 
 .comic-section-text-1 {
     font-size: 16px;
-    height: 100px;
+    height: 50px;
 }
 
 .comic-section-comment {
@@ -1314,6 +1391,8 @@
     align-items: center;
     gap: 40px;
     height: fit-content;
+    position: absolute;
+    bottom: 0px;
 }
 
 .comic-section-comment-1 {
@@ -1324,6 +1403,8 @@
 }
 
 .comic-section-comment-1 img {
+    display: flex;
+    align-items: center;
     gap: 5px;
     width: 15px;
     height: 15px;
@@ -1337,6 +1418,8 @@
     background-color: #cacaca;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 30px;
 }
 
 .comic-section:hover .comic-img {
@@ -1353,15 +1436,43 @@
     background-color: #262626;
     margin-top: 60px;
     padding-bottom: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+.uzeh-container-container {
+    background-color: #262626;
+    margin-top: 60px;
+    padding-bottom: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
 }
 
 .uzeh-section {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-bottom: 15px;
+}
+.uzeh-section-inside {
+    display: flex; 
+    gap: 15px;
+    width: 100%;
+
+}
+
+.uzeh-section-1 {
+    display: flex;
+    align-items: center;
     max-width: 1100px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    gap: 10px;
+    color: white;
+    font-weight: 700;
 }
 
 .uzeh-section p {
@@ -1382,12 +1493,6 @@
     top: 0px;
 }
 
-.uzeh-section {
-    padding-top: 40px;
-    display: flex;
-    max-width: 1100px;
-
-}
 
 .uzeh-textt p {
     font-size: 14px;
@@ -1404,6 +1509,7 @@
 .gogo-bot-logo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .gogo-bot-logo img {
@@ -1413,7 +1519,8 @@
 
 .bot-category {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    flex-direction: row;
     font-size: 14px;
 
 }
@@ -1511,7 +1618,6 @@
 
     .gogomain {
         margin-top: 0px;
-        height: 650px;
     }
 
     #gogocontainer-1 {
@@ -1529,26 +1635,233 @@
         opacity: 0.8;
     }
 
-    .mainsection1 {
-        width: 100%;
+    .gogomaincontainer {
         position: relative;
+    }
+
+    .mainsection2 {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .mainsection2-hidden {
+        display: none;
+    }
+
+    .mainsection2-hidden:hover {
+        visibility: visible;
+        transition: all;
+        transition-duration: 0.4s;
+    }
+
+    .mainsection1 {
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+        background-image: none;
+        padding: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .mainsection1 a {
+        margin: 0px;
+        font-size: 11px;
+    }
+
+    .mainsection1 h2 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .mainsection1 p {
+        margin: 0px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .main-section-share {
+        margin: 0px;
+    }
+
+    .arrow {
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: #212121b3;
+        border-radius: 20px;
+    }
+
+    .comment {
+        display: none;
+    }
+
+    .gogomaincontainerbottom {
+        display: none;
+    }
+
+    .gogoStory {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .ontsloh-container {
+        display: flex;
+
+    }
+
+    .story-section-container .story-section-1:nth-child(4) {
+        display: none;
+    }
+
+    .story-section-container .story-section-1:nth-child(5) {
+        display: none;
+    }
+
+    .story-section-container .story-section-1:nth-child(6) {
+        display: none;
+    }
+
+    .story-section-container {
+        gap: 10px;
+    }
+
+    .story-section-1 {
+        width: 80%;
+
+    }
+
+    .left-column-days {
+        display: none;
+    }
+
+    .right-column-line {
+        display: none;
+    }
+
+    .right-column-container {
+        display: none;
+    }
+
+    .gogo-column {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .left-column-container {
+        width: 100%;
         padding: 0px;
     }
 
-    .mainsecimg {
+    .left-column-news {
+        width: 100%;
+    }
+
+    .interview-people {
+        display: inline;
+    }
+
+    .interview-people-left {
+        display: flex;
+        justify-self: center;
+        height: 350px;
+    }
+
+    .interview-container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .interview-people-right {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .hev-mayag-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .gogohevmayag {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .gogo-tech {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .turtle {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .comic {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .hev-comment svg {
+        height: 12px;
+        width: 12px;
+    }
+
+    .hev-comment-1 {
+        font-size: 12px;
+    }
+
+    .hev-comment-2 {
+        display: flex;
+        font-size: 12px;
+        width: 12px;
+        height: 12px;
+        gap: 5px;
+    }
+
+    .hev-mayag-container .hev-section-1:nth-child(4) {
+        display: none;
+    }
+
+    .hev-section-1 {
+        width: 33.3%;
+    }
+
+    .main-content-bottom-flex {
+        font-size: 12px;
+
+    }
+
+    .main-content-bottom-flex svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .main-content-bottom-flex img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .main-content-bottom-flex p {
+        font-size: 12px;
+    }
+    .uzeh-section {
         display: block;
-        position: absolute;
-        top: 0px;
-        width: 100%;
+        gap: 15px;
+        padding-bottom: 15px;
     }
-
-    .mainsecimg img {
-        width: 100%;
-
+    .gogo-bot-logo {
+        flex-wrap: wrap;
     }
-    .gogomaincontainer {
-        height: 650px;
+    .last-container {
+        width: 95%;;
+        margin: auto;
     }
-
+    .gogo-bot-logo-img {
+        width: 20%;
+    }
+    
 
 }

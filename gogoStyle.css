@@ -85,7 +85,7 @@
 .headerrightbox {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 10px;
     margin-left: 84.305;
     width: 30%;
     font-size: 12px;
@@ -94,7 +94,7 @@
 .headerrightboxitem {
     display: flex;
     justify-content: space-around;
-    font-weight: 550;
+    font-weight: 400;
     margin: 5px 5px;
     font-size: 18px;
     width: 100%;
@@ -284,6 +284,7 @@
     margin: auto;
     margin-top: 40px;
     padding-bottom: 40px;
+    gap: 10px;
 
 }
 
@@ -1352,23 +1353,17 @@
     height: 50%;
     transition: all;
     transition-duration: 0.4s;
+    position: relative;
 }
 
 .comic-img img {
     width: 100%;
     height: 100%;
-    padding: 10px;
+    
 }
 
-.comic-img p {
-    position: absolute;
-    top: 0px;
-    left: 250px;
-    top: 100px;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
 
-}
+
 
 .comic-section-text {
     width: 100%;
@@ -1436,11 +1431,10 @@
     background-color: #262626;
     margin-top: 60px;
     padding-bottom: 70px;
-    padding-right: 30px;
-    padding-left: 30px;
     max-width: 1100px;
     margin: auto;
 }
+
 .uzeh-container-container {
     background-color: #262626;
     margin-top: 60px;
@@ -1456,8 +1450,9 @@
     gap: 15px;
     padding-bottom: 15px;
 }
+
 .uzeh-section-inside {
-    display: flex; 
+    display: flex;
     gap: 15px;
     width: 100%;
 
@@ -1503,7 +1498,8 @@
     max-width: 1100px;
     margin: auto;
     padding-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    
 }
 
 .gogo-bot-logo {
@@ -1521,9 +1517,23 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    font-size: 14px;
-
+    font-size: 15px;
+    flex-wrap: wrap;
+    width: 100%;
 }
+
+.bot-category img {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.gogo-bot-logo-category {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+
 
 .bot-category img {
     width: 20px;
@@ -1543,12 +1553,13 @@
 .botbot {
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
 }
 
 .logos {
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    opacity: 0.5;
 }
 
 .display {
@@ -1612,7 +1623,7 @@
     .headerinside {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: fit-content;
         margin-top: 5px;
     }
 
@@ -1628,11 +1639,20 @@
     .menu-bar {
         display: flex;
         align-items: center;
-        padding: 15px 20px;
+        justify-items: end; 
         border-left: 1px;
         border-style: solid;
         border-color: #e0e0e0;
         opacity: 0.8;
+        width: fit-content;
+        
+    }
+    .menu-bar img {
+        display: flex;
+        width: fit-content;
+        height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .gogomaincontainer {
@@ -1847,21 +1867,36 @@
     .main-content-bottom-flex p {
         font-size: 12px;
     }
+
     .uzeh-section {
         display: block;
         gap: 15px;
         padding-bottom: 15px;
     }
+
     .gogo-bot-logo {
         flex-wrap: wrap;
     }
+
     .last-container {
-        width: 95%;;
+        width: 95%;
+        ;
         margin: auto;
     }
+
     .gogo-bot-logo-img {
         width: 20%;
     }
-    
+
+    .uzeh-section-inside {
+        margin-bottom: 10px;
+    }
+
+    .gogo-bot-logo-category {
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
 
 }
